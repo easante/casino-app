@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <%= link_to "Sign up", new_user_registration_path %>
+    <% flash.each do |key, message| %>
+      <div class="text-center alert
+            alert-<%= key == 'notice'? 'success': 'danger' %>">
+        <%= message %>
+      </div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
