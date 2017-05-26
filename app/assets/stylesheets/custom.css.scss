@@ -17,14 +17,16 @@ body {
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a {
   color: #ff0000;
-  background-color: #0be0ef;
   font-size: 120%;
   padding-top: 25px;
   padding-bottom: 30px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
 }
 
 .navbar-header a.navbar-brand:hover {
